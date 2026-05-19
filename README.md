@@ -7,7 +7,7 @@ Issue tracker https://github.com/holodeck-b2b/axis2-xsltformatter/issues
 
 ## Usage
 ### Installation
-The formatter can be installed in any Axis2 version 1.8.2 or later deployment running Java 11 or later. To be able to use the `XSLTFormatter` put the project's jar file in your Axis2 deployment's `lib` directory. 
+The formatter can be installed in any Axis2 version 1.8.2 or later deployment running Java 11 or later. To be able to use the `XSLTFormatter` put the project's jar file in your Axis2 deployment's `lib` directory. For best XSLT support it is recommend to also install the Saxon XSLT processor. You can download [its jar file from the Maven central repository](https://repo1.maven.org/maven2/net/sf/saxon/Saxon-HE).
 
 ### Creating HTML output 
 The `XSLTFormatter` will create either HTML or plain text output by transforming the XML contained in the [first element of the] SOAP Body of the message to a new document using the XML Style Sheet provided in the SOAP header. To use it make sure that the `org.holodeckb2b.axis2.HTMLFormatter` is used to format the message. 
